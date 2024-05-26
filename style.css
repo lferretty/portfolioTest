@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #03100d;
+    font-family: "Ubuntu", sans-serif;
+/*     font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    max-width: 2000px;
+}
+
+
+header {
+    height: 100vh;
+}
+
+.logo {
+    width: 60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo img {
+    animation: gira 20s linear infinite;
+}
+
+.nav__bar {
+    background-color: #0000008c;
+    backdrop-filter: blur(10px);
+
+}
+
+
+@keyframes gira {
+    from {
+        transform: rotate(360deg)
+    }
+
+    to {
+        transform: rotate(0deg)
+    }
+}
+
+
+
+
+#header__video {
+    position: fixed;
+    z-index: -10;
+    width: 100vw;
+}
+
+img {
+    width: 100%;
+}
+
+
+.nav__bar {
+    position: fixed;
+    width: 100%;
+    display: block;
+    z-index: 10;
+}
+
+.nav__bar a {
+    transition: .2s;
+}
+
+.header-wrapper {
+    margin-top: 100px;
+}
+
+.container-md {
+    scroll-snap-type: y;
+}
+
+main section {
+    color: #cff;
+    text-align: center;
+    background-color: rgba(173, 216, 230, 0.455);
+    min-height: 99vh;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+
+h3 {
+    margin-top: 80px;
+}
+
+.button__container {
+    position: sticky;
+    top: 80vh;
+    z-index: 100;
+
+}
+
+.button__container a {
+    margin: 0;
+    line-height: 50px;
+    border: transparent 48px solid;
+    /*   border-top: transparent 48px solid;
+    border-right: transparent 48px solid; */
+    border-bottom: rgba(97, 186, 97, 0.584) 48px solid;
+    /*    border-left: transparent 48px solid; */
+    transition: .2s;
+    width: 10px;
+    height: 20px;
+}
+
+.button__container a:hover {
+    border-bottom: rgba(255, 255, 255, 0.773) 48px solid;
+}
+
+.button__container a:active {
+    border-bottom: rgb(254, 220, 0) 48px solid;
+    ;
+}
+
+.img__container {
+    height: 400px;
+    overflow: hidden;
+}
+
+
+
+.tarjeta a:hover .proyectos__img {
+    filter: grayscale();
+}
+
+.tarjeta a:hover p {
+    background-color: rgba(9, 57, 9, 0.41);
+}
+
+.tarjeta a:hover .proyectos__img {
+    scale: 1.1;
+}
+
+.proyectos__img {
+    width: 150%;
+    height: 400px;
+    transition: 2s;
+}
+
+.tarjeta h3 {
+    position: relative;
+    bottom: 80px;
+    background-color: rgba(9, 57, 9, 0.41);
+}
+
+.tarjeta p {
+    margin-top: -20%;
+}
+
+
+
+.coment figure {
+    width: 150px;
+    height: 150px;
+    /*  background-color: rgba(173, 216, 230, 0.749);
+    border: 5px solid rgba(0, 0, 139, 0.458); */
+    border-radius: 5%;
+    overflow: hidden;
+}
