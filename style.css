@@ -24,6 +24,9 @@ body {
     text-align: center;
 }
 
+body:active #navbarNavDropdown{
+    display: none;
+}
 .navbar {
     position: fixed;
     width: 100%;
@@ -80,8 +83,14 @@ body {
         .nav-link:hover {
             color: var(--text-primary);
         }
+
+        .navbar-toggler{
+            border: none;
+        }
     }
 }
+
+
 
 .hero {
 
@@ -134,7 +143,7 @@ section svg {
 h3,
 h4 {
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 h3 {
