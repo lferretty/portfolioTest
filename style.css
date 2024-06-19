@@ -24,7 +24,7 @@ body {
     text-align: center;
 }
 
-body:active #navbarNavDropdown{
+body:focus #navbarNavDropdown{
     display: none;
 }
 .navbar {
