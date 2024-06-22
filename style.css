@@ -29,6 +29,7 @@ body {
     position: fixed;
     height: 100vh;
     left: 0;
+    z-index: -10;
 
 }
 
