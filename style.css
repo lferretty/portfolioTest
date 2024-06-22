@@ -22,15 +22,20 @@ body {
     background-color: var(--bg-primary);
     color: #ddd;
     text-align: center;
+/*     background-image: url(images/background.jpg);
+ */ /*    background-attachment: fixed; */
+    background-size: cover;
+    
 }
 
 
 #header-video {
     position: fixed;
     height: 100vh;
-    left: 0;
+    margin: 0 auto;
     z-index: -10;
-
+    left: 0;
+    right: 0;
 }
 
 .navbar {
@@ -39,10 +44,26 @@ body {
     top: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
-    background-color: #01181884;
+    background-color: #022a39ae;
 
 }
 
+/* 
+#navbar-toggle {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .nav-menu {
+    display: none;
+  }
+  
+  #navbar-toggle:checked + label .nav-menu {
+    display: block;
+  } */
 
 .navbar-brand {
     display: flex;
@@ -106,7 +127,8 @@ section {
     animation-timeline: view();
     animation-range: entry 10%;
     /* scroll-snap-align: start;  */
-
+  /*   border: 1px solid lime; */
+    padding: 100px 0 0 0;
 }
 
 
@@ -142,12 +164,18 @@ h4 {
 
 h3 {
     color: var(--text-primary);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.5em;
 }
 
 
 
 #galeria_proyectos {
-    width: 90%;
+/*     width: 60%; */
 
     img {
         margin: auto;
@@ -226,8 +254,19 @@ h3 {
 
 /* FIN DE ESTILOS ACORDIÓN */
 
+ .card{
+   background-color: transparent;
+   color: lightblue;
+    padding: 0;
+    .card-img-top{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 
+
+ 
 
 @media screen and (min-width:1200px) {
     section {
@@ -239,7 +278,7 @@ h3 {
 
         img {
             margin: auto;
-            height: auto;
+            height: 500px;
         }
     }
 }
